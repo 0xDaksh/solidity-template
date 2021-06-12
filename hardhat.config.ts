@@ -30,13 +30,13 @@ if (!mnemonic) {
   throw new Error("Please set your MNEMONIC in a .env file");
 }
 
-const infuraApiKey = process.env.INFURA_API_KEY;
-if (!infuraApiKey) {
-  throw new Error("Please set your INFURA_API_KEY in a .env file");
+const alchemyApiKey = process.env.ALCHEMY_API_KEY;
+if (!alchemyApiKey) {
+  throw new Error("Please set your ALCHEMY_API_KEY in a .env file");
 }
 
 function createTestnetConfig(network: keyof typeof chainIds): NetworkUserConfig {
-  const url: string = "https://" + network + ".infura.io/v3/" + infuraApiKey;
+  const url: string = "https://eth-" + network + ".alchemyapi.io/v2/" + alchemyApiKey;
   return {
     accounts: {
       count: 10,

@@ -1,10 +1,10 @@
 {
-  "name": "@paulrberg/solidity-template",
+  "name": "@dakshmiglani/solidity-template",
   "description": "Setup for writing Solidity smart contracts",
   "version": "1.0.0",
   "author": {
-    "name": "Paul Razvan Berg",
-    "url": "https://paulrberg.com"
+    "name": "Daksh Miglani",
+    "url": "https://dak.sh"
   },
   "devDependencies": {
     "@codechecks/client": "^0.1.10",
